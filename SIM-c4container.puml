@@ -1,0 +1,102 @@
+@startuml
+' convert it with additional command line argument -DRELATIVE_INCLUDE="./.." to use locally
+!if %variable_exists("RELATIVE_INCLUDE")
+  !include %get_variable_value("RELATIVE_INCLUDE")/C4_Container.puml
+!else
+  !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+!endif
+ 
+SHOW_PERSON_OUTLINE()
+ 
+AddElementTag("backendContainer", $fontColor=$ELEMENT_FONT_COLOR, $bgColor="#335DA5", $shape=EightSidedShape(), $legendText="backend container (eight sided)")
+AddRelTag("async", $textColor=$ARROW_FONT_COLOR, $lineColor=$ARROW_COLOR, $lineStyle=DashedLine())
+AddRelTag("sync/async", $textColor=$ARROW_FONT_COLOR, $lineColor=$ARROW_COLOR, $lineStyle=DottedLine())
+ 
+title Container diagram for SIM
+ 
+Person(customer, Usuário, "Usuário do sistema")
+
+System_Boundary(c1, "WebSphere AS madrededeusCell01 - CL01") {
+
+Container(rsrc1, "CondutorDetranResource", "Resource java", "")
+Container(service1, "ConsultaAITReportService", "Resource java", "")
+Container(service2, "ConsultaVeiculoReportService", Service java", "")
+Container(rsrc2, "CRRDetranResource", "Resource java", "")
+Container(rsrc3, "CRRTalaoResource", "Resource java", "")
+Container(service3, "CumprimentoSuspensaoServiceV1", Service java", "")
+Container(service4, "CursoPreventivoReciclagemECNHServiceV1", Service java", "")
+Container(service5, "CursoPreventivoReciclagemPortalServiceV1", Service java", "")
+Container(rsrc4, "DadosDominioDetranResource", "Resource java", "")
+Container(service6, "HabilitacaoService", Service java", "")
+Container(service7, "JulgamentoJariReportService", Service java", "")
+Container(service8, "LinhaVidaPortariaReportService", Service java", "")
+Container(service9, "MobileDetranIndicacaoCondutorServiceV1", Service java", "")
+Container(service10, "PortalDetranRecursoAITServiceV1", Service java", "")
+Container(service11, "PortalDetranRecursoCNHServiceV1", Service java", "")
+Container(service12, "PortalDetranService", Service java", "")
+Container(service13, "ProcessoAITDERService.ProcessoAITDERServicePort", Service java", "")
+Container(service14, "Requests in background", Service java", "")
+Container(web_app1,"SIMWEB.war (/sim)", Java, Spring MVC", "Portal de acesso")
+Container(rsrc5, "TalaoEletronicoDetranResource", "Resource java", "")
+Container(rsrc6, "TalonarioEletronicoDetranResource", "Resource java", "")
+Container(rsrc7, "VeiculoDetranResource", "Resource java", "")
+Container(service15, "VeiculoService", Service java", "")
+}
+
+ 
+System_Boundary(c2, "Mainframe") {
+	System_Ext(LIBRA, "Mainframe UNISYS", "Armazena e executa grande quantidade de transações e dados")
+}
+
+System_Boundary(c3, "WebSphere AS madrededeusCell01 - DER") {
+Container(rsrc8, "AITEletronicoDERResource", "Resource java", "")
+Container(rsrc9, "AplicacaoDERResource", "Resource java", "")
+Container(rsrc10, "CondutorDERResource", "Resource java", "")
+Container(rsrc11, "DadosDominioNovoDERResource", "Resource java", "")
+Container(web_app2,"SIMWEB.war (/simsgmder)", Java, Spring MVC", "Portal de acesso")
+Container(rsrc12, "TalaoEletronicoDERResource", "Resource java", "")
+Container(rsrc13, "TalonarioEletronicoCRRDERResource", "Resource java", "")
+Container(rsrc14, "TalonarioEletronicoDERResource", "Resource java", "")
+}
+
+System_Boundary(c4, "IIB ACESERVER0") {
+Container(eai1, "Integração - Detran CRR v1", "IBM Integration Bus", "EAI Application")
+}
+
+System_Boundary(c5, "Apache Web Server - SIM - Intragov") {
+Container(lnk1, "simprod.prodesp.sp.gov.br - Cumprimento e Suspensao", "Domain link", "Intragov")
+Container(lnk2, "simprod.prodesp.sp.gov.br", "Domain link", "Intragov")
+Container(lnk3, "simsgmder.der.sp.gov.br", "Domain link", "Intragov")
+Container(lnk4, "wstaleletronico.prodesp.sp.gov.br", "Domain link", "Intragov")
+Container(lnk5, "ws.e-cnhsp.sp.gov.br", "Domain link", "Intragov")
+}
+
+System_Boundary(c6, "Apache Web Server - eCNH (Intragov)") {
+Container(lnk6, "ws.e-cnhsp.sp.gov.br", "Domain link", "Intragov")
+}
+
+System_Boundary(c7, "Apache Web Server - SIM - Internet") {
+Container(lnk7, "simsgmder.der.sp.gov.br", "Domain link", "Internet")
+Container(lnk8, "wstaleletronico.prodesp.sp.gov.br", "Domain link", "Internet")
+Container(lnk9, "www.sim.prodesp.sp.gov.br", "Domain link", "Internet")
+}
+
+Rel(customer, web_app1, "Uses", "HTTPS")
+Rel(customer, web_app2, "Uses", "HTTPS")
+
+Rel(c1, c3, "Uses", "socket")
+Rel(c1, c2, "Uses", "HTTPS/REST")
+Rel(c2, c3, "Uses", "socket")
+ 
+Rel(c2, c5, "Uses", "socket")
+Rel(c6, c1, "Uses", "socket")
+ 
+Rel(c4, c1, "Uses", "rest/soap")
+Rel(c4, c2, "Uses", "rest/soap")
+
+Rel(c1, c4, "Uses", "rest/soap")
+Rel(c1, c3, "Uses", "rest/soap")
+
+SHOW_LEGEND()
+footer drawn with PlantUML v. %version() and C4-PlantUML v. C4Version()
+@enduml
