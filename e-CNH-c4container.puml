@@ -1,0 +1,92 @@
+@startuml
+' convert it with additional command line argument -DRELATIVE_INCLUDE="./.." to use locally
+!if %variable_exists("RELATIVE_INCLUDE")
+  !include %get_variable_value("RELATIVE_INCLUDE")/C4_Container.puml
+!else
+  !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+!endif
+ 
+SHOW_PERSON_OUTLINE()
+ 
+AddElementTag("backendContainer", $fontColor=$ELEMENT_FONT_COLOR, $bgColor="#335DA5", $shape=EightSidedShape(), $legendText="backend container (eight sided)")
+AddRelTag("async", $textColor=$ARROW_FONT_COLOR, $lineColor=$ARROW_COLOR, $lineStyle=DashedLine())
+AddRelTag("sync/async", $textColor=$ARROW_FONT_COLOR, $lineColor=$ARROW_COLOR, $lineStyle=DottedLine())
+ 
+title Container diagram for e-CNH
+ 
+Person(customer, Usuário, "Usuário do sistemas")
+ 
+System_Boundary(c1, "WebSphere AS itamarajuCell01 - Cluster_eCNH") {
+        Container(web_app1, "GeforWEB", "Java, Spring MVC", "Portal de acesso")
+	Container(job1, "EmailProvaPraticaEletronica", "Java Job", "Executa o envio do Job")
+	Container(job2, "FormularioAvaliativoProvaPraticaEletronica", "Java Job", "Executa o envio do Job")
+	Container(job3, "ResultadoProvaPraticaEletronica", "Java Job", "Executa o envio do Job")
+    Container(service1, "DivisaoEquitativa", "Service java", "")
+	Container(service2, "ExameTeorico", "Service java", "")
+	Container(service3, "GeforService", "Service java", "")
+    Container(service4, "RenovacaoReciclagemEAD", "Service Java", "")
+    Container(service5, "RenovacaoReciclagem", "Service Java", "")    
+    Container(service6, "RenovacaoSimplificada", "Service Java", "")
+	Container(service7, "Simulador", "Service Java", "")	
+}
+ 
+System_Boundary(c2, "WebSphere AS itamarajuCell01 - Cluster_eCNH-EAI") {
+    Container(api1, "unidadeTransito", "rest app", "API")   
+	Container(eai1, "EAIGeforWEB", "java", "")
+    Container(service8, "DadosBiograficosService", "Security", "Motor Biometrico")
+    Container(service9, "ECNHService", "Service Java", "")    
+    Container(service10, "GeforService", "Service Java", "")
+}
+ 
+System_Boundary(c8, "WebSphere AS itamarajuCell01 - Cluster_SRV") {
+    Container(web_app2, "AdesaoWEB ", "Java, Spring MVC", "Portal de acesso")   
+}
+ 
+System_Boundary(c3, "Servidores de Baco de dados") {
+	ContainerDb(db1, "DB2 Connect", "DB2 zOS", "")
+	ContainerDb(db2, "Ourinhos-SQL1", "WMWARE Microsoft SQL Server", "")	
+}
+ 
+System_Boundary(c4, "Mainframe") {
+	System_Ext(LIBRA, "Mainframe UNISYS", "Armazena e executa grande quantidade de transações e dados")
+}
+ 
+System_Boundary(c5, "Servidores de Content Manager") {
+    Container(cm1, "IBM Content Manager DB2", "Library Server", "")   
+	Container(cm2, "IBM Content Manager", "Resource Manager", "")
+}
+ 
+System_Boundary(c6, "Apache Web Server - eCNH (Internet)") {
+    Container(ihs1, "queimadas-ihs1", "Web Server", "")   
+	Container(ihs2, "queimadas-ihs2", "Web Server", "")   
+	Container(ihs3, "queimadas-ihs3", "Web Server", "")   
+	Container(ihs4, "queimadas-ihs4", "Web Server", "")   
+ 
+	Container(link1, "tiraduvidas.e-cnhsp.sp.gov.br", "Domain link", "")   
+	Container(link2, "ws.e-cnhsp.sp.gov.br", "Domain link", "")   
+	Container(link3, "www.e-cnhsp.sp.gov.br", "Domain link", "")   
+}
+ 
+System_Boundary(c7, "Apache Web Server - eCNH (Intragov)") {
+	Container(link4, "tiraduvidas.e-cnhsp.sp.gov.br", "Domain link", "")   
+	Container(link5, "ws.e-cnhsp.sp.gov.br", "Domain link", "")   
+	Container(link6, "www.e-cnhsp.sp.gov.br", "Domain link", "")   
+}
+ 
+'System_Ext(email_system, "E-Mail System", "The internal Microsoft Exchange system")
+ 
+Rel(customer, web_app1, "Uses", "HTTPS")
+Rel(customer, web_app2, "Uses", "HTTPS")
+Rel(c1, c3, "Uses", "socket")
+Rel(c1, c2, "Uses", "HTTPS/REST")
+Rel(c2, c3, "Uses", "socket")
+ 
+Rel(c2, c5, "Uses", "socket")
+Rel(c6, c1, "Uses", "socket")
+ 
+Rel(c1, c4, "Uses", "socket")
+Rel(c2, c4, "Uses", "socket")
+ 
+SHOW_LEGEND()
+footer drawn with PlantUML v. %version() and C4-PlantUML v. C4Version()
+@enduml
