@@ -1,0 +1,431 @@
+3.3.	Integrações Previstas
+Sistema Integrado
+SUP-SIM-043-Configurar arvore de documentos por Orgao
+SUP-SIM-080-Configurar LDAP
+SUP-SIM-081-Integração com Mainframe
+SUP-SIM-085-Gerar Layout de Notificação, Correspondência, Carta
+SUP-SIM-089-Integração Portal DETRAN Defesa de Autuação
+SUP-SIM-090-Integração Portal DETRAN Suspensão Cassação
+SUP-SIM-091-Integração SIM x Content DER
+SUP-SIM-093-Integração Portal CETRAN Prefeitura e DER
+SUP-SIM-094-Integração Portal DETRAN Indicação de Condutor
+SUP-SIM-095-Integração SIM com Talonário Eletrônico
+SUP-SIM-096-Layout de Notificação de Cassação via FAC
+SUP-SIM-098-Integração Servidor Mobile DETRAN Indicação de Condutor
+SUP-SIM-099-Leiaute de Arquivos de Notificações de AIT do DETRAN
+SUP-SIM-100-Assinatura Digital de Documentos
+SUP-SIM-101-SIM-Integração Talonário Eletrônico com CRR
+SUP-SIM-102-Integração SIM com Dívida Ativa PGE
+SUP-SIM-103-Integração do Curso Preventivo de Reciclagem
+SUP-SIM-104-Geração de Notificação para Anexar Documentos de Processos de Suspensão no Portal DETRAN
+SUP-SIM-501-Integração RENAINF
+SUP-SIM-504-Arquivo Arrecadação FUNSET
+SUP-SIM-505-Notificação de Autuação
+SUP-SIM-506-Geração de NP
+SUP-SIM-507-Geração de NA Radar
+SUP-SIM-510-Baixa por Arquivo Bancário
+SUP-SIM-515-Notificação de Resultado de Processo
+SUP-SIM-516-Integrar Infraest
+SUP-SIM-517-Leiaute de Arquivo de AIT Radar
+SUP-SIM-518-Integração Bloqueio Veículo
+SUP-SIM-519-Baixa por Licenciamento Eletrônico
+SUP-SIM-520-Repasse Financeiro
+SUP-SIM-521-Leiautes dos Arquivos de Migração
+SUP-SIM-522-Integração SIM com Talonário Eletrônico Prefeituras
+SUP-SIM-570-Integrar Pontuação
+SUP-SIM-701-Integração SIM com Talonário Eletrônico DER
+
+
+UC-001-SIM-Manter Usuários
+UC-002-SIM-Consultar Usuários
+UC-003-SIM-Cadastrar Usuarios
+UC-004-SIM-Alterar Usuarios
+UC-005-SIM-Ativar Desativar Usuário
+UC-006-SIM-Consultar Grupo Usuarios
+UC-007-SIM-Alterar Grupo Usuario
+UC-008-SIM-Incluir Grupo Usuario
+UC-010-SIM-Ativar Desativar Grupo Usuario
+UC-012-SIM-Efetuar Login Usuário Senha
+UC-013-SIM-Efetuar Logout
+UC-014-SIM-Gerar Log Auditoria
+UC-015-SIM-Manter Parametros do sistema
+UC-017-SIM-Manter Faixa de AR
+UC-018-SIM-Manter Enquadramento
+UC-019-SIM-Manter Tipo de Notificação
+UC-020-SIM-Manter Justificativa
+UC-021-SIM-Manter Feriados
+UC-022-SIM-Manter Cadastro de Orgãos
+UC-023-SIM-Manter Cadastro de Dados do Orgão
+UC-024-SIM-Manter Agente Autuador
+UC-025-SIM-Consultar Orgãos
+UC-028-SIM-Manter Talão
+UC-029-SIM-Distribuir Talão
+UC-031-SIM-Cancelar Folha de Talão
+UC-032-SIM-Empenhar Talão
+UC-033-SIM-Reempenhar Talão
+UC-034-SIM-Controlar Estoque de Talão
+UC-035-SIM-Baixar Talão
+UC-036-SIM-Solicitar Talão
+UC-037-SIM-Gerar Relatório Consumo Médio de Talão
+UC-039-SIM-Gerar Relatório Empenho Reempenho
+UC-040-SIM-Gerar Relatório Historico Talão
+UC-041-SIM-Gerar Relatório Quantitativo de talões
+UC-047-SIM-Gerar Arquivo de Condutores
+UC-051-SIM-Controlar Prazos de Processo, Julgamento, Pena e Suspensão
+UC-053-SIM-Gerar Pena
+UC-056-SIM-Registrar Recebimento de Habilitação Suspensa
+UC-057-SIM-Receber Recurso
+UC-059-SIM-Cadastrar Faixas de Penalidades
+UC-060-SIM-Consultar Passíveis de Suspensão ou Cassação
+UC-062-SIM-Cadastrar Mandado de Segurança
+UC-067-SIM-Registrar AIT
+UC-068-SIM-Consultar Veículo
+UC-071-SIM-Analisar AIT Manual Placa e Chassi
+UC-072-SIM-Manter Indicação do Real Condutor
+UC-073-SIM-Manter Multa com Averbação
+UC-080-SIM-Manter Processo de Defesa, Advertência e Recurso
+UC-082-SIM-Controlar Distribuição de Processo de Defesa
+UC-086-SIM-Solicitar Efeito Suspensivo e Baixa Provisoria
+UC-087-SIM-Julgar Processo de Defesa
+UC-095-SIM-Consultar Linha da Vida do Condutor
+UC-119-SIM-Manter Equipamento
+UC-120-SIM-Cadastrar Operadoras
+UC-123-SIM-Relatório de Equipamentos
+UC-139-SIM-Manter AIT Eletrônico
+UC-140-SIM-Pesquisar suspensão ou cassação direito de dirigir
+UC-150-SIM-Gerar Relatório de Produção de AIT
+UC-154-SIM-Gerar Relatório de AITs Rejeitadas
+UC-161-SIM-Relatório Agente X Multa
+UC-163-SIM-Gerar Relatório de AITs com Recurso
+UC-164-SIM-Gerar Relatório de AITs com Indicação de Condutor
+UC-166-SIM-Gerar Relatório de Enquadramento por Municipio da Infração
+UC-168-SIM-Gerar Relatório de Postagem de ARs
+UC-169-SIM-Relatório multas por status
+UC-198-SIM-Gerar Relatório Solicitar Talão Item
+UC-199-SIM-Alterar Senha
+UC-200-SIM-Gerar Relatorio Distribuição de talão
+UC-202-SIM-Gerar Relatório Cadastro Talão
+UC-204-SIM-Consultar AR
+UC-214-SIM-Gerar Relatório de Portarias Emitidas
+UC-218-SIM-Relatório de CNHs indicadas
+UC-219-SIM-Autenticar AIT Eletrônico
+UC-220-SIM-Manter Registros Pontuação Negada
+UC-221-SIM-Gerar ATA de Processos Julgados JARI
+UC-222-SIM-Gerar Relatório de AITS Totalizadas
+UC-223-SIM-Relatório Qtd de multas por CPF
+UC-224-SIM-Relatório Qtd de multas por Enquadramento
+UC-225-SIM-Relatório Qtd de multas por Veículo
+UC-226-SIM-Gerar Relatório de Baixa
+UC-227-SIM-Consultar AIT
+UC-229-SIM-Manter Talonario Eletronico
+UC-231-SIM-Aprovar Processo AIT Deferido-Jari
+UC-232-SIM-Julgar Processo AIT-Jari
+UC-233-SIM-Enviar Folha de Julgamento AIT-Jari
+UC-234-SIM-Aprovar Deferimento Suspensão - Jari
+UC-235-SIM-Julgar Processo CNH-Jari
+UC-236-SIM-Enviar Folha de Julgamento CNH-Jari
+UC-237-SIM-Gerar Relatório de Processos de Defesa e Advertência Cadastrada
+UC-238-SIM-Distribuir Processo AIT e CNH -Jari via Job
+UC-239-SIM-Controlar Distribuição Processo AIT - Jari
+UC-240-SIM-Controlar Distribuição Processo CNH - Jari
+UC-241-SIM-Manter Órgão Prodesp
+UC-242-SIM-Manter Órgão Cliente DETRAN
+UC-243-SIM-Excluir Desbloqueio de CNH via Job
+UC-244-SIM-Cadastrar AIT Eletronico PF e PJ
+UC-245-SIM-Pesquisar AIT Eletronico PF e PJ
+UC-246-SIM-Gerar Relatório de folhas por Talonário Eletronico
+UC-247-SIM-Manter Conselheiro Cetran
+UC-248-SIM-Manter Recebimento de Processo Cetran - AIT
+UC-249-SIM-Manter Processo Cetran - AIT
+UC-250-SIM-Distribuir Processo Cetran - AIT
+UC-251-SIM-Manter Parecer de Processo Cetran - AIT
+UC-252-SIM-Manter Sentença de Julgamento Cetran - AIT
+UC-253-SIM-Gerar Ata de Processos Cetran
+UC-254-SIM-Gerar Remessa de Processos Cetran - AIT
+UC-255-SIM-Manter Processo Cetran - CNH
+UC-256-SIM-Distribuir Processo Cetran - CNH
+UC-257-SIM-Manter Parecer de Processo Cetran - CNH
+UC-258-SIM-Manter Sentença de Julgamento Cetran - CNH
+UC-260-SIM-Consultar AIT PF e PJ
+UC-261-SIM-Distribuir Processo Cetran via job
+UC-262-SIM-Manter Recurso CETRAN - DER
+UC-263-SIM-Acompanhar Recurso CETRAN - DER
+UC-264-SIM-Controlar Diligência CETRAN - DER
+UC-265-SIM-Consultar Linha da Vida do Processo de Suspensão e Cassação
+UC-266-SIM-Distribuir Processos Suspensão e Cassação via Job
+UC-267-SIM-Integrar Resultados de Processos Cetran de AIT e CNH - via Job
+UC-268-SIM-Integrar SIM com Portal Detran - AIT
+UC-269-SIM-Controlar Diligência AIT JARI e CETRAN - DETRAN
+UC-270-SIM-Gerar Documentos Suspensão via Job
+UC-271-SIM-Gerar Relatório de Recursos Cadastrados JARI – AIT
+UC-272-SIM-Integrar SIM com Portal Detran - CNH
+UC-273-SIM-Manter Controle de Jobs
+UC-274-SIM-Consultar Log de execução de Jobs
+UC-275-SIM-Consultar Log de erros de Sistema
+UC-276-SIM-Consultar Multa Reincidente
+UC-277-SIM-Registrar Devolução de Habilitação Suspensa
+UC-278-SIM-Gerar Relatório de Processos de Suspensão Cadastrados
+UC-279-SIM-Gerar Relatório de Processos de Suspensão Julgados
+UC-280-SIM-Controlar Diligência CNH JARI e CETRAN
+UC-281-SIM-Instaurar Processo de Cassação
+UC-282-SIM-Cadastrar Defesa ou Recurso de Cassação
+UC-283-SIM-Cadastrar Resultado de Julgamento de Cassação
+UC-285-SIM-Gerar Relatório de Recursos Cadastrados JARI - Suspensão
+UC-286-SIM-Gerar Relatório de Recursos Cadastrados Cetran - AIT
+UC-287-SIM-Gerar Relatório de Recursos Julgados Cetran - AIT
+UC-288-SIM-Gerar Relatório de Recursos Cadastrados Cetran - CNH
+UC-289-SIM-Gerar Relatório de Recursos Julgados Cetran - CNH
+UC-290-SIM-Manter Inicio do Cumprimento de Cassação (Bloqueio de CNH)
+UC-291-SIM-Solicitar Reabilitação para Cassação
+UC-292-SIM-Liberar Reabilitação Para Cassação
+UC-293-SIM-Cadastrar Termino de Cumprimento
+UC-295-SIM-Instaurar Cassação via job
+UC-296-SIM-Gerar Notificação Cassação Impressa via Job
+UC-297-SIM-Gerar Passíveis de Cassação via job
+UC-298-SIM-Atualizar Situação do AR de Cassação via Job
+UC-299-SIM-Integrar Cassação Portal Detran
+UC-300-SIM-Julgar Revel Cassação via Job
+UC-301-SIM-Bloquear CNH Cassação via Job
+UC-302-SIM-Gerar Relatório de Portarias Emitidas via Job
+UC-303-SIM-Gerar Relatório de Processos de Cassação Cadastrados
+UC-304-SIM-Gerar Relatório de Processos de Cassação Julgados
+UC-305-SIM-Gerar Notific. Decisão Cassação Impressa via Job
+UC-307-SIM-Gerar Aviso Bloqueio Cassação Impressa via Job
+UC-308-SIM-Penalizar Processo de Suspensão
+UC-309-SIM-Julgar Indicação de Condutor
+UC-310-SIM-Integrar indicação de Condutor com o Portal DETRAN
+UC-311-SIM-Pesquisar Processo Suspensão a Penalizar
+UC-312-SIM-Visualizar Processo Suspensão a Penalizar
+UC-313-SIM-Integrar AIT Eletronico com Mainframe via Job
+UC-314-SIM-Manter julgamento de Defesa Cassação
+UC-315-SIM-Integrar Exclusão de Pontuação de Deferimento de Cassação - via job
+UC-316-SIM-Manter Distribuição Processo Cassação - Jari
+UC-317-SIM-Manter Julgamento Processo Cassação - JARI
+UC-318-SIM-Pesquisar Envio de Folha de Julgamento Cassação - JARI
+UC-319-SIM-Incluir Envio de Folha de Julgamento Cassação - JARI
+UC-320-SIM-Pesquisar Aprovação de Deferimento Cassação -Jari
+UC-321-SIM-Incluir Aprovação de Deferimento Cassação-Jari
+UC-322-SIM-Gerar Relatório de Recursos Cadastrados JARI - Cassação
+UC-325-SIM-Reintegrar Devolução de CNH
+UC-326-SIM-Gerar Relatório de Recursos Cadastrados Cassação CETRAN
+UC-327-SIM-Gerar Relatório de Recursos Julgados Cassação CETRAN
+UC-328-SIM-Manter Integração com Mainframe
+UC-329-SIM-Integrar Transações Pendentes com Mainframe via Job
+UC-331-SIM-Excluir Pontuação apos a Devolução da CNH via Job
+UC-332-SIM-Pesquisar Veículo na Base Estadual
+UC-333-SIM-Gerar Relatório de Recursos Julgados JARI - AIT
+UC-334-SIM-Gerar Relatório de Recursos Julgados JARI - Suspensão
+UC-335-SIM-Gerar Relatório de Recursos Julgados JARI - Cassação
+UC-336-SIM-Pesquisar Aprovação de Deferimento AIT - JARI no DETRAN
+UC-337-SIM-Incluir Aprovação de Deferimento AIT - Jari no DETRAN
+UC-338-SIM-Pesquisar Aprovação de Deferimento Cassação - JARI no DETRAN
+UC-339-SIM-Incluir Aprovação de Deferimento Cassação - Jari no DETRAN
+UC-340-SIM-Pesquisar Aprovação de Deferimento Suspensão - JARI no DETRAN
+UC-341-SIM-Incluir Aprovação de Deferimento Suspensão - JARI no DETRAN
+UC-343-SIM-Consultar Log de Transações com Mainframe
+UC-344-SIM-Integrar SIM com Portal Cetran - Recurso CETRAN de Prefeitura e DER
+UC-346-SIM-Manter Solicitação de Indicação de Condutor
+UC-347-SIM-Visualizar Processo de Indicação de Condutor
+UC-348-SIM-Manter Servidores e URLs de Acesso Interno
+UC-349-SIM-Consultar Detalhes dos Usuários
+UC-350-SIM-Gerar Relatorio de Usuários
+UC-351-SIM-Gerar Relatório de Processos de Defesa e Advertência Julgados
+UC-352-SIM-Integrar AIT Eletrônico com SIM
+UC-353-SIM-Pesquisar Envio de Notificação por FAC - AIT
+UC-354-SIM-Enviar Folha de Postagem de Notificação por FAC
+UC-355-SIM-Acompanhar Processos de CNH
+UC-356-SIM-Pesquisar Indicação de Condutores
+UC-357-SIM-Consultar Histórico de Processos de CNH
+UC-358-SIM-Reintegrar Recebimento de CNH
+UC-359-SIM-Pesquisar Envio de Notificação por FAC - CNH
+UC-360-SIM-Cadastrar Término de Cumprimento de Cassação sem Portaria Eletrônica
+UC-361-SIM-Gerar Relatório de Processos com Indicação de Condutor
+UC-364-SIM-Consultar Imagem da CNH
+UC-365-SIM-Reintegrar Julgamento de Defesa de Suspensão de CNH
+UC-367-SIM-Gerar Relatório de Tempo de Digitação de AIT Eletrônico
+UC-369-SIM-Tratar Processos de Suspensão sem Penalização
+UC-370-SIM-Anexar Documentos na linha da Vida do Processo
+UC-371-SIM-Acompanhar Processos de AIT
+UC-372-SIM-Consultar Histórico de Processos de AIT
+UC-373-SIM-Gerar Relatório de Distribuição de Processos JARI - Suspensão
+UC-375-SIM-Gerar Relatório de Distribuição de Processos JARI - Cassação
+UC-377-SIM-Gerar Relatório de Distribuição de Processos de Defesa - Cassação
+UC-378-SIM-Gerar Relatório de Distribuição de Processos de Defesa - Suspensão
+UC-384-SIM-Cadastrar Acesso Multi Órgão
+UC-385-SIM-Integrar Indicação de Condutor com Mobile DETRAN
+UC-386-SIM-Consultar Linha da Vida do Processo de AIT 
+UC-387-SIM-Gerar Notificações de AIT na Linha da Vida via JOB
+UC-390-SIM-Assinar Digitalmente Documentos em Lote
+UC-391-SIM-Redistribuir Documentos para Assinatura Digital
+UC-392-SIM-Gerar Relatório de Documentos para Assinatura Digital
+UC-394-SIM- Integrar Talonário Eletrônico com CRR
+UC-396-SIM- Manter Parâmetros de Julgamento de Renúncia para Suspensão
+UC-397-SIM-Integrar Dívida Ativa com PGE via Job
+UC-398-SIM-Gerenciar Reunião da Junta Administrativa
+UC-399-SIM-Monitorar Reunião da Junta Administrativa
+UC-400-SIM-Assinar Digitalmente Folha de Julgamento CNH em Lote
+UC-401-SIM-Assinar Digitalmente Folha de Julgamento AIT em Lote
+UC-402-SIM-Manter Julgadores da Junta Administrativa
+UC-403-SIM-Integrar Resultados de Processos JARI de AIT e CNH via Job
+UC-404-SIM-Gerar Notificação para Anexar Documentos de Processos de Suspensão no Portal DETRAN via Job
+UC-405-SIM-Integrar Curso Preventivo de Reciclagem com e-CNH
+UC-406-SIM-Manter Solicitação de Curso Preventivo de Reciclagem
+UC-407-SIM-Processar Curso Preventivo de Reciclagem via Job
+UC-408-SIM-Gerar Notificação para Anexar Documentos de Processos de Suspensão no Portal DETRAN via Job
+UC-409-SIM-Integrar Curso Preventivo de Reciclagem com Portal DETRAN
+UC-410-SIM-Integrar processos de Indicação de Condutor com Mainframe
+UC-411-SIM-Controlar Diligência de Indicação de Condutor
+UC-412–SIM-Consultar Linha da Vida Detalhada do Processo de Suspensão e Cassação
+UC-413-SIM-Consultar Linha da Vida Detalhada do Processo de AIT
+UC-414-SIM-Gerar Relatório de Recurso CETRAN Suspensão em Andamento
+UC-501-SIM-Enviar (Upload) Imagens Manual
+UC-502-SIM-Enviar (Upload) Imagens - Radar
+UC-503-SIM-Manter AIT Manual
+UC-504-SIM-Analisar AIT - Manual
+UC-505-SIM-Analisar AIT - Radar
+UC-506-SIM-Manter AIT - Radar
+UC-507-SIM-Consultar Veículos - Prefeit
+UC-508-SIM-Consultar AIT - Prefeitura
+UC-510-SIM-Excluir Imagens
+UC-511-SIM-Reimprimir Notificação
+UC-512-SIM-Verificar Geração NP
+UC-513-SIM-Gerar Rel. de Contr. da Produção de AIT - Prefeit
+UC-514-SIM-Gerar Rel. de Contr. de Prod. Situação das Imagens - Prefeit
+UC-515-SIM-Gerar Rel. de Tempo de Entrada - Prefeit
+UC-516-SIM-Gerar Rel. de AITs Rejeitados - Prefeit
+UC-517-SIM-Gerar Rel. de AITs com Indicação de Condutor - Prefeit
+UC-518-SIM-Gerar Rel. de Tempo Médio de Envio e Conversão - Prefeit
+UC-519-SIM-Gerar Rel. de AITs Processados - Prefeit
+UC-520-SIM-Gerar Rel. de AITs por Agente - Prefeit
+UC-521-SIM-Consultar Defesa com AIT não Cadastrado
+UC-522-SIM-Julgar Processo - Prefeit
+UC-523-SIM-Confirmar Deferimento - Prefeit
+UC-524-SIM-Gerar Rel. de Processos - Prefeit
+UC-525-SIM-Registrar Reembolso
+UC-526-SIM-Aprovar Reembolso
+UC-527-SIM-Efetivar Reembolso
+UC-528-SIM-Gerar Rel. Estatistico de Enquadramento - Prefeit
+UC-529-SIM-Gerar Rel. Estatistico de Faturamento - Prefeit
+UC-530-SIM-Gerar Rel. Estatistico Lista de Postagem - Prefeit
+UC-531-SIM-Gerar Rel. de AITs por Mês - Prefeit
+UC-532-SIM-Gerar Rel. de Vencimentos de AITs - Prefeit
+UC-533-SIM-Gerar Rel. de Arrecadação - Prefeit
+UC-534-SIM-Gerar Rel. de Arrecadação Real Vs. Estimado - Prefeit
+UC-535-SIM-Gerar Rel. de Inadimplentes - Prefeit
+UC-536-SIM-Gerar Rel. de Multas Pagas com Indicação FUNSET - Prefeit
+UC-537-SIM-Gerar Rel. de Multas Pagas com Recurso Deferido - Prefeit
+UC-538-SIM-Gerar Rel. de Pagamentos Divergentes - Prefeit
+UC-542-SIM-Consultar Baixas
+UC-543-SIM-Consultar Ocorrências de Baixas
+UC-544-SIM-Baixar por Comprovante de Pagto
+UC-545-SIM-Baixar por Decisão Administrativa ou Judicial
+UC-547-SIM-Baixar por Licenciamento Eletrônico
+UC-548-SIM-Baixar Arquivo de Boleto
+UC-550-SIM-Gerar Rel. de Baixa Prefeit
+UC-551-SIM-Gerar Rel. de Baixa de AITs por Unidade Fiscalizadora - Prefeit
+UC-552-SIM-Gerar Arquivo Arrecadação FUNSET
+UC-553-SIM-Devolver Notificação
+UC-555-SIM-Manter Contrato de Faturamento
+UC-556-SIM-Manter Item Faturamento
+UC-557-SIM-Manter Processo de Defesa Advertencia e Recurso - Pref
+UC-558-SIM-Gerar NA
+UC-560-SIM-Gerar NP
+UC-561-SIM-Gerar Notificação de Resultado de Processo
+UC-563-SIM-Manter Unidade Fiscalizadora
+UC-564-SIM-Manter Prefeituras
+UC-565-SIM-Analisar AIT Manual Expiradas
+UC-566-SIM-Analisar AIT Manual Rejeitado
+UC-567-SIM-Analisar AIT Radar Expirados
+UC-568-SIM-Integrar Infraest
+UC-569-SIM-Integrar RENAINF
+UC-570-SIM-Integrar Pontuação
+UC-571-SIM-Integrar Bloqueio Veículo
+UC-572-SIM-Consultar Histórico de Impressão
+UC-573-SIM-Consultar Reembolso
+UC-574-SIM-Indicar Condutor - Prefeituras
+UC-575-SIM-Manter Efeito Suspensivo
+UC-577-SIM-Controlar Diligência CETRAN - PREFEITURAS
+UC-578-SIM-Manter Recurso CETRAN - PREFEITURAS
+UC-579-SIM-Manter Solicitação de Talão - Prefeit
+UC-580-SIM-Manter Cadastro de Talão - Prefeit
+UC-581-SIM-Empenhar Talão - Prefeitura
+UC-582-SIM-Reempenhar Talão - Prefeitura
+UC-583-SIM-Baixar Talão - Prefeit
+UC-585-SIM-Controlar Estoque de Talão - Prefeit
+UC-586-SIM-Gerar Relatório de Empenho e Reempenho - Prefeitura
+UC-587-SIM-Gerar Relatório de Consumo Médio do Talão - Prefeitura
+UC-588-SIM-Gerar Relatório Quantitativo de Talões por Status - Prefeitura
+UC-589-SIM-Gerar Relatório de Histórico de Talão - Prefeitura
+UC-590-SIM-Gerar Relatório Consultar Talão - Prefeit
+UC-591-SIM-Manter Integração Manual INFRAEST - Prefeitura
+UC-592-SIM-Manter Integração Manual RENAINF - Prefeitura
+UC-593-SIM-Manter Integração Manual Bloqueio Veículo - Prefeitura
+UC-594-SIM-Manter Integração Manual Pontuação - Prefeitura
+UC-595-SIM-Atualizar Status do AIT - Expirado e Deferido
+UC-596-SIM-Autenticar Sistema de Migração
+UC-597-SIM-Exportar Dados do Sistema WEBCOMM
+UC-598-SIM-Importar Dados para o Sistema SIM
+UC-599-SIM-Imprimir 2º via de Notificações
+UC-602-SIM-Imprimir 2º via de Notificação de Resultado de Julgamento
+UC-603-SIM-Cadastrar Email para Envio de Log de JOBs
+UC-604-SIM-Baixar Arquivo GR
+UC-605-SIM-Gerar Email de Aviso de Faixa de AR via JOB
+UC-606-SIM-Consultar Solicitação de Repasse
+UC-607-SIM-Controlar Repasse de Multas RENAINF
+UC-608-SIM-Manter Valor Base da Gravidade da Infração
+UC-609-SIM-Manter Mensagens de Alerta
+UC-610-SIM-Consultar Erros RENAINF
+UC-611-SIM-Consultar Erros de Notificações
+UC-612-SIM-Controlar Funcionalidades
+UC-613-SIM-Controlar Rejeição de Repasse Financeiro
+UC-614-SIM-Regerar Bloqueto de Repasse Financeiro via Job
+UC-615-SIM-Controlar Arquivos de Repasse Financeiro
+UC-616-SIM-Enviar Imagens AIT Manual
+UC-617-SIM-Enviar Imagens AIT Radar
+UC-618-SIM-Processar Envio de Imagens via Job
+UC-619-SIM-Excluir Imagem via Job
+UC-620-SIM-Manter Acesso das Prefeituras às Funcionalidades
+UC-621-SIM-Manter Agendamento de Execução de Script
+UC-622-SIM-Manter Bloqueio de Veículo sem AIT Cadastrado
+UC-623-SIM-Manter Pontuação de CNH sem AIT Cadastrado
+UC-624-SIM-Efetuar Login de Migração Prefeituras
+UC-625-SIM-Manter Migração de Prefeituras
+UC-626-SIM-Exportar Leiaute de Arquivos de Migração
+UC-627-SIM-Executar Script Agendado via Job
+UC-628-SIM-Autenticar Talonário Eletrônico de Prefeituras
+UC-629-SIM-Sincronizar Dados do Talonário Eletrônico de Prefeituras
+UC-630-SIM-Configurar Impressora do Talonário Eletrônico de Prefeituras
+UC-631-SIM-Manter AIT Veículo do Talonário Eletrônico de Prefeituras
+UC-632-SIM-Manter AIT PF e PJ do Talonário Eletrônico de Prefeituras
+UC-633-SIM-Integrar Talonário Eletrônico de Prefeituras com SIM
+UC-634-SIM-Processar AIT Eletrônico de Prefeituras via Job
+UC-635-SIM-Analisar AIT Eletrônico de Prefeituras Cancelado
+UC-636-SIM-Consultar AIT Eletrônico PF e PJ de Prefeituras
+UC-637-SIM-Gerar Multa NIC de Prefeituras via Job
+UC-638-SIM-Consultar Multa NIC de Prefeituras
+UC-639-SIM-Regerar Arquivos de Baixas de AITs Migrados
+UC-640-SIM-Manter Veiculos Isentos
+UC-642-SIM-Gerar Dados para Relatório Estatístico de Faturamento via JOB
+UC-643-SIM-Consultar AIT Isentos
+UC-644-SIM-Manter Arquivos de Integração
+UC-645-SIM-Acompanhar Transações RENAINF
+UC-646-Manter Cartão do Idoso
+UC-702-SIM-Consultar AIT DER
+UC-703-SIM-Autenticar AIT Eletrônico DER
+UC-704-SIM-Cadastrar AIT Eletrônico DER - CTB
+UC-705-SIM-Consultar AIT Eletrônico DER
+UC-707-SIM-Cadastrar AIT Eletrônico DER - Alcoolemia
+UC-708-SIM-Cadastrar AIT Eletrônico DER - Velocidade
+UC-710-SIM-Cadastrar AIT Eletrônico DER - PP
+UC-711-SIM-Cadastrar AIT Eletrônico DER - PesoNF
+UC-712-SIM-Integrar AIT Eletrônico DER com SIM
+UC-713-SIM-Consultar AIT PF e PJ DER
+UC-714-SIM-Cadastrar AIT Eletrônico PF e PJ DER
+UC-715-SIM-Pesquisar AIT Eletrônico PF e PJ DER
+UC-716-SIM-Gerar Arquivo de Boleto com Registro
+UC-717-SIM-Manter Simulador Homologação
+UC-718-SIM-Gerar Relatório de Retorno RENAINF
+UC-719-SIM-Gerenciar Bloqueio Desbloqueio e Pontuação
+UC-720-SIM-Gerar Rel. Estatístico de Apontamento para Faturamento
+UC-721-SIM-Gerar Dados Rel. Estat. de Apontamento para Faturamento Via Procedure
+UC-722-Gerador de Massa Guia de Recolhimento
