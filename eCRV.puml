@@ -1,0 +1,232 @@
+
+/rest
+WebSphere AS jacaraciCell01 - Cluster_SEV-CON
+
+/rest/acompanhamento
+WebSphere AS jacaraciCell01 - Cluster_SEV-CON
+
+/rest/aprovacaoAutomatica
+WebSphere AS jacaraciCell01 - Cluster_SEV-DOC
+
+/rest/aptv
+WebSphere AS jacaraciCell01 - Cluster_SEV-DOC
+
+/rest/converter
+WebSphere AS jacaraciCell01 - Cluster_SEV-DOC
+
+/rest/desbloqueio
+WebSphere AS jacaraciCell01 - Cluster_SEV-DOC
+
+/rest/documentoFicha
+WebSphere AS jacaraciCell01 - Cluster_SEV-DOC
+
+/rest/escolhaPlaca
+WebSphere AS jacaraciCell01 - Cluster_SEV-DOC
+
+/rest/ficha
+WebSphere AS jacaraciCell01 - Cluster_SEV-CON
+
+/rest/impressao
+WebSphere AS jacaraciCell01 - Cluster_SEV-DOC
+
+/rest/limitador
+WebSphere AS jacaraciCell01 - Cluster_SEV-CON
+
+/rest/municipio
+WebSphere AS jacaraciCell01 - Cluster_SEV-CON
+
+/rest/primeiroEmplacamento
+WebSphere AS jacaraciCell01 - Cluster_SEV-DOC
+
+/rest/renavam-ws
+WebSphere AS jacaraciCell01 - Cluster_SEV-CON
+
+/rest/resumo/veiculo
+WebSphere AS jacaraciCell01 - Cluster_SEV-CON
+
+/rest/sefaz
+WebSphere AS jacaraciCell01 - Cluster_SEV-CON
+
+/rest/taxa
+WebSphere AS jacaraciCell01 - Cluster_SEV-CON
+
+/rest/tipoArquivoEmissao
+WebSphere AS jacaraciCell01 - Cluster_SEV-CON
+
+/rest/transferencia
+WebSphere AS jacaraciCell01 - Cluster_SEV-DOC
+
+/rest/transferencia
+WebSphere AS jacaraciCell01 - Cluster_SEV-CON
+
+/rest/veiculo
+WebSphere AS jacaraciCell01 - Cluster_SEV-CON
+
+dynatrace
+Certificado Digital - AC BR
+
+dynatrace
+Certificado Digital - AC CertFacil
+
+dynatrace
+Certificado Digital - AC Certifica Anapolis
+
+dynatrace
+Certificado Digital - AC Certisign
+
+dynatrace
+Certificado Digital - AC Consulti Brasil
+
+dynatrace
+Certificado Digital - AC Digital
+
+dynatrace
+Certificado Digital - AC DigitalSign
+
+dynatrace
+Certificado Digital - AC DigitalTrust
+
+dynatrace
+Certificado Digital - AC Doccloud
+
+dynatrace
+Certificado Digital - AC Fenacon
+
+dynatrace
+Certificado Digital - AC ICP Brasil
+
+dynatrace
+Certificado Digital - AC ICP Brasil Outra LCR
+
+dynatrace
+Certificado Digital - AC Imprensa Oficial
+
+dynatrace
+Certificado Digital - AC Infoco Digital
+
+dynatrace
+Certificado Digital - AC Jus
+
+dynatrace
+Certificado Digital - AC Link Certificação
+
+dynatrace
+Certificado Digital - AC Notarial
+
+Certificado Digital - AC Prodesp
+
+dynatrace
+Certificado Digital - AC Receita Fazenda
+
+dynatrace
+Certificado Digital - AC Rede Ideia
+
+dynatrace
+Certificado Digital - AC Safeweb
+
+dynatrace
+Certificado Digital - AC Serasa (certificadodigital.com.br)
+
+dynatrace
+Certificado Digital - AC Serasa (lcr.certificados.com.br)
+
+dynatrace
+Certificado Digital - AC Serpro
+
+dynatrace
+Certificado Digital - AC Soluti
+
+dynatrace
+Certificado Digital - AC SPC Brasil
+
+dynatrace
+Certificado Digital - AC Syngular ID
+
+dynatrace
+Certificado Digital - AC Valid
+
+ConsultasService.ConsultasServicePort
+WebSphere AS jacaraciCell01 - Cluster_SEV-CON
+
+dynatrace
+cve.tecnobank.com.br
+
+DocumentosService.DocumentosServicePort
+WebSphere AS jacaraciCell01 - Cluster_SEV-DOC
+
+EnviarProcessosTaxasPagasJob
+WebSphere AS jacaraciCell01 - Cluster_eCRV
+
+EnviarStatusProcessoJob
+WebSphere AS jacaraciCell01 - Cluster_eCRV
+430 ms
+
+ExecutarRotinaAutomatizadaEmplacamentoJob
+WebSphere AS jacaraciCell01 - Cluster_eCRV
+
+ExecutarRotinaAutomatizadaMunicipioEstadoJob
+WebSphere AS jacaraciCell01 - Cluster_eCRV
+
+ExecutarRotinaAutomatizadaProprietarioJob
+WebSphere AS jacaraciCell01 - Cluster_eCRV
+
+ExecutarRotinaAutomatizadaTransferenciaJob
+WebSphere AS jacaraciCell01 - Cluster_eCRV
+
+ExecutarRotinaAutomatizadaTransferenciaTdvJob
+WebSphere AS jacaraciCell01 - Cluster_eCRV
+
+ExecutarRotinaPesquisaPagamento
+WebSphere AS jacaraciCell01 - Cluster_eCRV
+
+GeverWEB (/gever)
+WebSphere AS jacaraciCell01 - Cluster_eCRV
+
+guanambi-ihs1
+Apache HTTP Server - Internet
+
+guanambi-ihs3
+Apache HTTP Server - Internet
+
+guanambi-ihs4
+Apache HTTP Server - Internet
+
+LacracaoService.LacracaoServicePort
+WebSphere AS jacaraciCell01 - Cluster_eCRV
+
+localhost
+WebSphere AS jacaraciCell01 - Cluster_eCRV
+
+Mainframe_IBM_117
+
+Requests in background threads - Cluster_eCRV
+WebSphere AS jacaraciCell01 - Cluster_eCRV
+
+SERPRO - renavam.estaleiro.serpro.gov.br
+
+SevConsultaWeb (/SevConsulta)
+WebSphere AS jacaraciCell01 - Cluster_SEV-CON
+
+SevDocumentoWeb (/SevDocumento)
+WebSphere AS jacaraciCell01 - Cluster_SEV-DOC
+
+wcf.nfe.intra.fazenda.sp.gov.br
+
+ws.e-crvsp.sp.gov.br (Intragov)
+Apache HTTP Server - Intragov
+
+www.e-crvsp.sp.gov.br (Internet)
+Apache HTTP Server - Internet
+
+www.e-crvsp.sp.gov.br (Intragov)
+Apache HTTP Server - Intragov
+
+www.hnprd.detran.sp.gov.br (/DetranDS)
+
+www2.e-crvsp.sp.gov.br
+Apache HTTP Server - Internet
+
+www2.e-crvsp.sp.gov.br
+Apache HTTP Server - Intragov
+
+
