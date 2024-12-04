@@ -51,9 +51,28 @@ System_Boundary(c4, "Mainframe") {
 	System_Ext(LIBRA, "Mainframe UNISYS", "Armazena e executa grande quantidade de transações e dados")
 }
  
-System_Boundary(c5, "Servidores de Content Manager") {
-    Container(cm1, "IBM Content Manager DB2", "Library Server", "")   
-	Container(cm2, "IBM Content Manager", "Resource Manager", "")
+'System_Boundary(c5, "Servidores de Content Manager") {
+'    Container(cm1, "IBM Content Manager DB2", "Library Server", "")   
+'	Container(cm2, "IBM Content Manager", "Resource Manager", "")
+'}
+
+System_Boundary(c8, "Apache Web Server - eCNH ") {
+    Container(ihs4, "CAPIMFINO-ihs1", "Web Server", "")   
+	Container(ihs5, "CAPIMFINO-ihs2", "Web Server", "")   
+	Container(ihs6, "CAPIMFINO-ihs3", "Web Server", "")   
+	Container(ihs7, "CAPIMFINO-ihs4", "Web Server", "")     
+}
+ 
+System_Boundary(c9, "Apache Web Server - eCNH ") {
+    Container(ihs8, "AGUASECA-ihs1", "Web Server", "")   
+	Container(ihs9, "AGUASECA-ihs2", "Web Server", "")       
+} 
+
+System_Boundary(c10, "VIRTUAL 2") {
+	Container(service11, "JARDIMMACHADO", "Service", "")
+	Container(service12, "JARDIMMARINGA", "Service", "")
+	Container(service13, "RiachaodoPoco", "Service", "")	
+	Container(service14, "RibeiradoPiaui", "Service", "")
 }
  
 System_Boundary(c6, "Apache Web Server - eCNH (Internet)") {
@@ -81,8 +100,9 @@ Rel(c1, c3, "Uses", "socket")
 Rel(c1, c2, "Uses", "HTTPS/REST")
 Rel(c2, c3, "Uses", "socket")
  
-Rel(c2, c5, "Uses", "socket")
+Rel(c10, c1, "Uses", "socket")
 Rel(c6, c1, "Uses", "socket")
+Rel(c9, c1, "Uses", "socket")
  
 Rel(c1, c4, "Uses", "socket")
 Rel(c2, c4, "Uses", "socket")
